@@ -55,6 +55,7 @@ class aspects
             if(substr($aspect,-1)){
                 $aspect=substr($aspect,0,-1);
             }
+
             $exp = explode("(",$aspect);
             $instance = Loader::getSingleton($exp[0], "aspect");
             if ($instance) {
